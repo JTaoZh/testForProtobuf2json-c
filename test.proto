@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SubTest {
+    required uint32 id = 1;
+}
+
+message Test {
+    required uint32 id = 1;
+    required SubTest subTest = 2;
+    optional string name = 3;
+}
